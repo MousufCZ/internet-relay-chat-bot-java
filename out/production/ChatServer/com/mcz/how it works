@@ -1,0 +1,48 @@
+User and Server
+===============
+1. User --> Server
+
+        [done] * login/logoff
+        [done] * Client status (are they online/offline)
+
+2. Server --> User
+
+        [done] * Broadcasts who is online / which client is going offline
+
+3. User --> User
+
+        ** Direct messages
+        ** broadcast messages
+
+
+============================================
+Added features
+==============
+        ** Authentication and security
+        ** GUI
+        ** Multiple TCP servers
+
+
+============================================
+1 - to - 1
+==========
+        ** How it should work
+        guest: "msg jim Hello World" <--- sent
+        jim: "msg guest Hello World" <--- recv
+
+        Structure
+        +++++++++
+        * msg <user> body....
+
+============================================
+Broadcast
+=========
+        ** Broadcast messaging via #topic
+        ** #topic <--- Topic room/group chat
+        ** join #topic
+        ** leave #topic
+
+        Structure
+        +++++++++
+        send: msg #topic body....
+        recieve: msg #topic:<login> body....
